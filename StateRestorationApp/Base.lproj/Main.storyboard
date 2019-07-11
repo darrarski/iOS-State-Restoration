@@ -13,7 +13,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="AhD-4R-awG">
             <objects>
-                <tabBarController id="LrP-7l-C7A" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LrP-7l-C7A" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wqn-VU-E7r">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -31,7 +31,7 @@
         <!--Tab A-->
         <scene sceneID="S67-A9-0FV">
             <objects>
-                <navigationController id="N2p-f2-z8V" userLabel="Tab A" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TabANavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N2p-f2-z8V" userLabel="Tab A" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tab A" id="H46-Xw-Vqf"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XfZ-BE-zbg">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -48,7 +48,7 @@
         <!--A1-->
         <scene sceneID="dUV-8I-sKU">
             <objects>
-                <viewController id="IfC-Cb-ufR" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IfC-Cb-ufR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UMp-fs-Ocp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
         <!--Tab B-->
         <scene sceneID="sIA-ac-mGS">
             <objects>
-                <navigationController id="rdK-Km-bLD" userLabel="Tab B" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="TabBNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rdK-Km-bLD" userLabel="Tab B" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Tab B" id="XcG-DU-5V2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SvP-Ah-J01">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -94,7 +94,7 @@
         <!--A2-->
         <scene sceneID="QoO-JZ-KD4">
             <objects>
-                <viewController id="5Qs-5t-SOA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5Qs-5t-SOA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lAa-IK-6wE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,7 +123,7 @@
         <!--A3-->
         <scene sceneID="Uvr-zd-Gcn">
             <objects>
-                <viewController id="K9h-Kz-2FG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="A3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K9h-Kz-2FG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OJh-B0-bq4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,7 +139,7 @@
         <!--B1-->
         <scene sceneID="N5x-eh-xF4">
             <objects>
-                <viewController id="VPW-24-7d5" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VPW-24-7d5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F7q-xo-7h0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,7 +168,7 @@
         <!--B2-->
         <scene sceneID="hDy-QK-qEG">
             <objects>
-                <viewController id="PRZ-HY-fZG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PRZ-HY-fZG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c91-33-iBS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -197,7 +197,7 @@
         <!--B3-->
         <scene sceneID="vnA-Hf-dO9">
             <objects>
-                <viewController id="aqT-GM-ayu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="B3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aqT-GM-ayu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WRx-QM-mil">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
