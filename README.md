@@ -44,4 +44,4 @@ Requirements:
 
 Copyright © 2019 Dariusz Rybicki Darrarski
 
-License: **TBD**
+License: [GNU GPLv3](LICENSE)
