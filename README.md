@@ -1,6 +1,7 @@
 # iOS State Restoration
 
-![Swift v5.0](https://img.shields.io/badge/swift-v5.0-orange.svg)
+![swift v5.0](https://img.shields.io/badge/swift-v5.0-orange.svg)
+![platform iOS](https://img.shields.io/badge/platform-iOS-blue.svg)
 
 **iOS app state restoration demo**
 
