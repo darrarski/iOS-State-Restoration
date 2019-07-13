@@ -15,24 +15,15 @@ class ViewController: UIViewController, UIViewControllerRestoration {
     // MARK: - View
 
     override func loadView() {
-        view = UIView()
-        view.addSubview(button)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerYAnchor)
-        ])
+        view = theView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-        button.setTitle("Push", for: .normal)
-        button.setTitleColor(button.tintColor, for: .normal)
-        button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        theView.button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     }
 
-    private lazy var button = UIButton()
+    private lazy var theView = View()
 
     @objc
     private func buttonAction() {
