@@ -35,7 +35,7 @@ class DemoViewController: UIViewController, UIViewControllerRestoration {
     @objc
     private func buttonAction() {
         let viewController = DemoViewController()
-        viewController.title = title.map { $0 + "1" }
+        viewController.title = title.map { $0 + "*" }
         show(viewController, sender: nil)
     }
 
