@@ -62,9 +62,7 @@ class DemoViewController: UIViewController, UIViewControllerRestoration {
 
     override func decodeRestorableState(with coder: NSCoder) {
         super.decodeRestorableState(with: coder)
-        if let title = coder.decodeObject(forKey: DemoViewController.stateEncodingTitleKey) as? String {
-            self.title = title
-        }
+        title = coder.decodeObject(forKey: DemoViewController.stateEncodingTitleKey) as? String
         demoView.stepper.value = coder.decodeDouble(forKey: DemoViewController.stateEncodingStepKey)
     }
 
