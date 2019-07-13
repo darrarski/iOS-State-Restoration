@@ -9,9 +9,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
         ) -> Bool {
+        let viewControllerA = ViewController()
+        viewControllerA.title = "A"
+
+        let navigationControllerA = UINavigationController(rootViewController: viewControllerA)
+        navigationControllerA.restorationIdentifier = "Navigation"
+
+        let viewControllerB = ViewController()
+        viewControllerB.title = "B"
+
+        let navigationControllerB = UINavigationController(rootViewController: viewControllerB)
+        navigationControllerB.restorationIdentifier = "Navigation"
+
+        let tabBarController = UITabBarController()
+        tabBarController.restorationIdentifier = "MainTabBar"
+        tabBarController.viewControllers = [navigationControllerA, navigationControllerB]
+
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.restorationIdentifier = "MainWindow"
-        window?.rootViewController = UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController()
+        window?.rootViewController = tabBarController
+
         return true
     }
 
