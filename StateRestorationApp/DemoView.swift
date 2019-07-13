@@ -15,21 +15,36 @@ class DemoView: UIView {
 
     // MARK: - Subviews
 
+    let label = UILabel()
+    let stepper = UIStepper()
     let button = UIButton()
 
+    private let stack = UIStackView()
+
     private func setUpSubviews() {
-        addSubview(button)
+        stack.axis = .vertical
+        stack.alignment = .center
+        stack.spacing = 16
+
+        label.font = .preferredFont(forTextStyle: .title1)
+        stack.addArrangedSubview(label)
+
+        stepper.minimumValue = 0
+        stack.addArrangedSubview(stepper)
+
         button.setTitle("Push", for: .normal)
         button.setTitleColor(button.tintColor, for: .normal)
+        stack.addArrangedSubview(button)
+        addSubview(stack)
     }
 
     // MARK: - Layout
 
     private func setUpLayout() {
-        button.translatesAutoresizingMaskIntoConstraints = false
+        stack.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            button.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
-            button.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor)
+            stack.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor),
+            stack.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor)
         ])
     }
 
