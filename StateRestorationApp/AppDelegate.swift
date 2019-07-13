@@ -9,13 +9,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
         ) -> Bool {
-        let viewControllerA = ViewController()
+        let viewControllerA = DemoViewController()
         viewControllerA.title = "A"
 
         let navigationControllerA = UINavigationController(rootViewController: viewControllerA)
         navigationControllerA.restorationIdentifier = "Navigation"
 
-        let viewControllerB = ViewController()
+        let viewControllerB = DemoViewController()
         viewControllerB.title = "B"
 
         let navigationControllerB = UINavigationController(rootViewController: viewControllerB)

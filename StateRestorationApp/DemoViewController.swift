@@ -1,11 +1,11 @@
 import UIKit
 
-class ViewController: UIViewController, UIViewControllerRestoration {
+class DemoViewController: UIViewController, UIViewControllerRestoration {
 
     init() {
         super.init(nibName: nil, bundle: nil)
-        restorationIdentifier = "ViewController"
-        restorationClass = ViewController.self
+        restorationIdentifier = "DemoViewController"
+        restorationClass = DemoViewController.self
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -15,19 +15,19 @@ class ViewController: UIViewController, UIViewControllerRestoration {
     // MARK: - View
 
     override func loadView() {
-        view = theView
+        view = demoView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        theView.button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+        demoView.button.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
     }
 
-    private lazy var theView = View()
+    private lazy var demoView = DemoView()
 
     @objc
     private func buttonAction() {
-        let viewController = ViewController()
+        let viewController = DemoViewController()
         viewController.title = title.map { $0 + "1" }
         show(viewController, sender: nil)
     }
@@ -38,19 +38,19 @@ class ViewController: UIViewController, UIViewControllerRestoration {
         withRestorationIdentifierPath identifierComponents: [String],
         coder: NSCoder
         ) -> UIViewController? {
-        return ViewController()
+        return DemoViewController()
     }
 
     // MARK: - UIStateRestoring
 
     override func encodeRestorableState(with coder: NSCoder) {
         super.encodeRestorableState(with: coder)
-        coder.encode(title, forKey: ViewController.stateEncodingTitleKey)
+        coder.encode(title, forKey: DemoViewController.stateEncodingTitleKey)
     }
 
     override func decodeRestorableState(with coder: NSCoder) {
         super.decodeRestorableState(with: coder)
-        if let title = coder.decodeObject(forKey: ViewController.stateEncodingTitleKey) as? String {
+        if let title = coder.decodeObject(forKey: DemoViewController.stateEncodingTitleKey) as? String {
             self.title = title
         }
     }
